@@ -1,0 +1,16 @@
+int a = millis()/1000;
+
+void tempo(){
+  int b = a - millis()/1000;
+  println ("tiempo: " + b);
+  if(b <= -5){
+    a = millis()/1000;
+    b = a - millis()/1000;
+    
+    background(78,219,51);
+  }
+}
+
+void main (){
+  animate (tempo);
+}
