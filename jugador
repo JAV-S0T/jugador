@@ -1,0 +1,43 @@
+int y = 160;
+int x = 160;
+
+void teclas(){
+ 
+    
+    if (y > 2 && keyPressed && key == "up"){
+      y = y-3;
+    }
+  
+
+		if (x > 2 && keyPressed && key == "left"){
+      x = x-3;
+    }
+  
+
+		if (y < 310 &&keyPressed && key == "down"){
+      y = y +3;
+    }
+  
+
+		if (x < 310 && keyPressed && key == "right"){
+      x =x + 3;
+    }
+
+
+	jugador();
+}
+
+
+
+void jugador(){
+    background(221,110,220);
+  rect (x,y,10,10);
+ 
+}
+
+void main(){
+  animate (teclas);
+}
+
+background(221,110,220);
+
